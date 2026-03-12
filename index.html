@@ -1,153 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website Portfolio Sederhana</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Portfolio Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Website Portfolio Mahasiswa</h1>
+      <p>Belajar HTML & CSS - Web Basic</p>
+    </header>
 
-<header>
-<h1>Website Portfolio Mahasiswa</h1>
-<p>Belajar HTML & CSS - Web Basic</p>
-</header>
+    <nav>
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#hobi">Hobi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
 
-<nav>
-<ul>
-<li><a href="#about">Tentang</a></li>
-<li><a href="#hobi">Hobi</a></li>
-<li><a href="#galeri">Galeri</a></li>
-<li><a href="#data">Data</a></li>
-<li><a href="#kontak">Kontak</a></li>
-</ul>
-</nav>
+    <section id="about">
+      <h2>Tentang Website</h2>
+      <p>
+        Website ini adalah portfolio sederhana saya yang dibuat sebagai Final
+        Project kelas Web Basic. Website ini dibuat menggunakan HTML dan CSS
+        untuk menampilkan informasi pribadi, galeri aktivitas, dan form kontak.
+      </p>
+    </section>
 
-<section id="about">
-<h2>Tentang Website</h2>
-<p>
-Website ini dibuat sebagai Final Project Web Basic menggunakan HTML dan CSS.
-Website ini berisi contoh penggunaan list, table, form, grid, flexbox, dan responsive design.
-</p>
-</section>
+    <section id="hobi">
+      <h2>Daftar Hobi</h2>
 
-<section id="hobi">
-<h2>Daftar Hobi</h2>
+      <h3>Hobi Favorit</h3>
+      <ol>
+        <li>Membaca</li>
+        <li>Olahraga</li>
+        <li>Ngoding</li>
+      </ol>
 
-<h3>Hobi Favorit</h3>
-<ol>
-<li>Membaca</li>
-<li>Olahraga</li>
-<li>Ngoding</li>
-</ol>
+      <h3>Makanan Favorit</h3>
+      <ul>
+        <li>Nasi Goreng</li>
+        <li>Ayam Bakar</li>
+        <li>Sate</li>
+      </ul>
+    </section>
 
-<h3>Makanan Favorit</h3>
-<ul>
-<li>Nasi Goreng</li>
-<li>Ayam Bakar</li>
-<li>Sate</li>
-</ul>
+    <section id="galeri">
+      <h2>Galeri Foto</h2>
 
-</section>
+      <div class="gallery">
+        <div class="card">
+          <img src="belajar.jpg" />
+          <p>Belajar</p>
+        </div>
 
-<section id="galeri">
-<h2>Galeri Foto</h2>
+        <div class="card">
+          <img src="kegiatan kampus.JPG" />
+          <p>Kegiatan Kampus</p>
+        </div>
 
-<div class="gallery">
+        <div class="card">
+          <img src="hobby.jpg" />
+          <p>Hobi</p>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/300/200?1">
-<p>Foto 1</p>
-</div>
+        <div class="card">
+          <img src="suasana kampus.jpg" />
+          <p>Suasana Kampus</p>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<img src="https://picsum.photos/300/200?2">
-<p>Foto 2</p>
-</div>
+    <section id="data">
+      <h2>Data Anggota</h2>
 
-<div class="card">
-<img src="https://picsum.photos/300/200?3">
-<p>Foto 3</p>
-</div>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Jurusan</th>
+          <th>Universitas</th>
+        </tr>
 
-<div class="card">
-<img src="https://picsum.photos/300/200?4">
-<p>Foto 4</p>
-</div>
+        <tr>
+          <td>Asafati Gea</td>
+          <td>Sistem Informasi</td>
+          <td>UNAI</td>
+        </tr>
+      </table>
+    </section>
 
-</div>
+    <section id="kontak">
+      <h2>Form Kontak</h2>
 
-</section>
+      <form>
+        <label>Nama Lengkap</label>
+        <input type="text" />
 
-<section id="data">
-<h2>Data Anggota</h2>
+        <label>Email</label>
+        <input type="email" />
 
-<table>
-<tr>
-<th>Nama</th>
-<th>Umur</th>
-<th>Kota</th>
-</tr>
+        <label>Nomor HP</label>
+        <input type="tel" />
 
-<tr>
-<td>Nama 1</td>
-<td>20</td>
-<td>Bandung</td>
-</tr>
+        <label>Jenis Kelamin</label>
+        <div class="radio">
+          <input type="radio" name="gender" /> Laki-laki
+          <input type="radio" name="gender" /> Perempuan
+        </div>
 
-<tr>
-<td>Nama 2</td>
-<td>21</td>
-<td>Jakarta</td>
-</tr>
+        <label>Hobi</label>
+        <div class="checkbox">
+          <input type="checkbox" /> Membaca <input type="checkbox" /> Olahraga
+          <input type="checkbox" /> Musik
+        </div>
 
-<tr>
-<td>Nama 3</td>
-<td>19</td>
-<td>Medan</td>
-</tr>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
 
-</table>
-
-</section>
-
-<section id="kontak">
-<h2>Form Kontak</h2>
-
-<form>
-
-<label>Nama Lengkap</label>
-<input type="text">
-
-<label>Email</label>
-<input type="email">
-
-<label>Nomor HP</label>
-<input type="tel">
-
-<label>Jenis Kelamin</label>
-<div class="radio">
-<input type="radio" name="gender"> Laki-laki
-<input type="radio" name="gender"> Perempuan
-</div>
-
-<label>Hobi</label>
-<div class="checkbox">
-<input type="checkbox"> Membaca
-<input type="checkbox"> Olahraga
-<input type="checkbox"> Musik
-</div>
-
-<button type="submit">Kirim</button>
-
-</form>
-
-</section>
-
-<footer>
-<p>© 2026 Web Basic Project</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026 | Final Project Web Basic Created by Asafati Gea</p>
+    </footer>
+  </body>
 </html>
