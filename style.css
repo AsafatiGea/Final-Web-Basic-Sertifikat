@@ -82,6 +82,11 @@ h2 {
   margin-bottom: 15px;
 }
 
+.gallery .card img{
+  height:180px;
+  object-fit:cover;
+}
+
 /* LIST */
 
 ol, ul {
