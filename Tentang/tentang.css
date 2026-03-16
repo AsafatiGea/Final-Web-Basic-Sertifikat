@@ -1,0 +1,26 @@
+section p {
+  max-width: 800px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.info-box {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.info-box img {
+  width: 350px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    flex-direction: column;
+  }
+
+  .info-box img {
+    width: 100%;
+  }
+}

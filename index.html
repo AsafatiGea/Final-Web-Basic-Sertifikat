@@ -3,159 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Asafati Gea</title>
+
+    <title>Discover Nias Island</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <h1>Asafati Gea</h1>
-      <p>Mahasiswa Sistem Informasi | Aspiring Full Stack Developer</p>
+      <h1>Discover Nias Island</h1>
+
+      <p>Menjelajahi keindahan alam dan budaya Pulau Nias</p>
     </header>
 
-    <nav>
+    <!-- NAVBAR DESKTOP -->
+    <nav class="desktop">
       <ul>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#hobi">Minat</a></li>
-        <li><a href="#galeri">Galeri</a></li>
-        <li><a href="#data">Data</a></li>
-        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Tentang/tentang.html">Tentang</a></li>
+        <li><a href="Wisata/wisata.html">Destinasi</a></li>
+        <li><a href="Budaya/budaya.html">Budaya</a></li>
+        <li><a href="Galeri/galeri.html">Galeri</a></li>
+        <li><a href="Daftar/daftar.html">Kunjungi</a></li>
       </ul>
     </nav>
 
-    <section id="about">
-      <h2>Tentang Saya</h2>
+    <!-- NAVBAR MOBILE -->
+    <nav class="device">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Tentang/tentang.html">Tentang</a></li>
+        <li><a href="Wisata/wisata.html">Destinasi</a></li>
+        <li><a href="Budaya/budaya.html">Budaya</a></li>
+        <li><a href="Galeri/galeri.html">Galeri</a></li>
+        <li><a href="Daftar/daftar.html">Kunjungi</a></li>
+      </ul>
+    </nav>
 
-      <div class="card">
-        <img src="img/original photo.jpg" alt="Foto Asafati Gea" />
+    <section>
+      <h2>Selamat Datang di Pulau Nias</h2>
+
+      <div class="hero">
+        <img src="img/download.jpg" alt="Pulau Nias" />
 
         <p>
-          Saya adalah mahasiswa Sistem Informasi di Universitas Advent
-          Indonesia. Saya memiliki minat dalam pengembangan web dan analisis
-          data. Saat ini saya sedang mempelajari teknologi pengembangan web
-          seperti HTML, CSS, Node.js, React, dan database. Website ini dibuat
-          sebagai Final Project pada kelas Web Basic.
+          Pulau Nias merupakan salah satu destinasi wisata terbaik di Indonesia.
+          Pulau ini terkenal dengan ombaknya yang mendunia, budaya yang unik,
+          serta keindahan alam yang masih sangat alami.
         </p>
       </div>
     </section>
 
-    <section id="hobi">
-      <h2>Minat & Hobi</h2>
+    <section>
+      <h2>Mengapa Mengunjungi Nias?</h2>
 
-      <h3>Minat Teknologi</h3>
-
-      <ol>
-        <li>Web Development</li>
-        <li>Analisis Data</li>
-        <li>Belajar Teknologi Baru</li>
-      </ol>
-
-      <h3>Hobi</h3>
-
-      <ul>
-        <li>Membaca</li>
-        <li>Olahraga</li>
-        <li>Belajar Pemrograman</li>
-      </ul>
-    </section>
-
-    <section id="galeri">
-      <h2>Galeri Aktivitas</h2>
-
-      <div class="gallery">
+      <div class="features">
         <div class="card">
-          <img src="img/belajar.jpg" alt="Belajar" />
-          <p>Belajar Teknologi</p>
+          <h3>Surfing Dunia</h3>
+          <p>Pantai Sorake memiliki ombak terbaik di dunia.</p>
         </div>
 
         <div class="card">
-          <img src="img/kegiatan kampus.JPG" alt="Kegiatan Kampus" />
-          <p>Kegiatan Kampus</p>
+          <h3>Budaya Unik</h3>
+          <p>Tradisi lompat batu dan rumah adat Nias.</p>
         </div>
 
         <div class="card">
-          <img src="img/hobby.jpg" alt="Hobi" />
-          <p>Aktivitas Hobi</p>
-        </div>
-
-        <div class="card">
-          <img src="img/suasana kampus.jpg" alt="Suasana Kampus" />
-          <p>Suasana Kampus</p>
+          <h3>Alam Indah</h3>
+          <p>Pantai, desa adat, dan pemandangan alam yang luar biasa.</p>
         </div>
       </div>
     </section>
 
-    <section id="data">
-      <h2>Data Pribadi</h2>
-
-      <table>
-        <tr>
-          <th>Nama</th>
-          <th>Jurusan</th>
-          <th>Universitas</th>
-        </tr>
-
-        <tr>
-          <td>Asafati Gea</td>
-          <td>Sistem Informasi</td>
-          <td>Universitas Advent Indonesia</td>
-        </tr>
-      </table>
-    </section>
-
-    <section id="kontak">
-      <h2>Kontak</h2>
-
-      <form>
-        <label>Nama Lengkap</label>
-        <input type="text" required />
-
-        <label>Email</label>
-        <input type="email" required />
-
-        <label>Nomor HP</label>
-        <input type="tel" />
-
-        <label>Jenis Kelamin</label>
-
-        <div class="radio">
-          <input type="radio" name="gender" /> Laki-laki
-          <input type="radio" name="gender" /> Perempuan
-        </div>
-
-        <label>Hobi</label>
-
-        <div class="checkbox">
-          <input type="checkbox" /> Membaca <input type="checkbox" /> Olahraga
-          <input type="checkbox" /> Musik
-        </div>
-
-        <button type="submit">Kirim</button>
-      </form>
-
-      <br />
-
-      <p>
-        Email:
-        <a href="mailto:asafatii.gea26@gmail.com"> asafatii.gea26@gmail.com </a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/AsafatiGea" target="_blank"> AsafatiGea </a>
-      </p>
-      <p>
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/asafati-gea-43788b340"
-          target="_blank"
-        >
-          asafati-gea
-        </a>
-      </p>
-    </section>
-
     <footer>
-      <p>© 2026 | Portfolio Web Basic | Created by Asafati Gea</p>
+      <p>© 2024 Discover Nias Island</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

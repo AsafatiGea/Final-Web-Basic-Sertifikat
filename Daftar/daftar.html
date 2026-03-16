@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Daftar Kunjungan - Discover Nias Island</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="daftar.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Rencanakan Kunjungan Anda</h1>
+      <p>Isi form untuk informasi lengkap dan penawaran terbaik</p>
+    </header>
+
+    <!-- NAVBAR DESKTOP -->
+    <nav class="desktop">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Tentang/tentang.html">Tentang</a></li>
+        <li><a href="../Wisata/wisata.html">Destinasi</a></li>
+        <li><a href="../Budaya/budaya.html">Budaya</a></li>
+        <li><a href="../Galeri/galeri.html">Galeri</a></li>
+        <li><a href="daftar.html">Kunjungi</a></li>
+      </ul>
+    </nav>
+
+    <!-- NAVBAR MOBILE -->
+    <nav class="device">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Tentang/tentang.html">Tentang</a></li>
+        <li><a href="../Wisata/wisata.html">Destinasi</a></li>
+        <li><a href="../Budaya/budaya.html">Budaya</a></li>
+        <li><a href="../Galeri/galeri.html">Galeri</a></li>
+        <li><a href="daftar.html">Kunjungi</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>Informasi Kunjungan</h2>
+
+      <form id="visitForm">
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="asal">Negara / Kota Asal</label>
+        <input type="text" id="asal" name="asal" />
+
+        <label for="tanggal">Tanggal Kunjungan</label>
+        <input type="date" id="tanggal" name="tanggal" />
+
+        <label for="jumlah">Jumlah Orang</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" value="1" />
+
+        <label for="pesan">Pesan Khusus</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+        <button type="submit">Kirim Permintaan Informasi</button>
+      </form>
+
+      <div id="successMessage" style="display:none; margin-top:20px; padding:15px; background:#d4edda; border-radius:5px; color:#155724;">
+        Terima kasih! Informasi kunjungan akan segera dikirim ke email Anda.
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 Discover Nias Island</p>
+    </footer>
+
+    <script>
+      document.getElementById('visitForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('successMessage').style.display = 'block';
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
