@@ -84,6 +84,11 @@ section h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+.gallery img {
+  width: 90%;
+  border-radius: 6px;
+}
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
