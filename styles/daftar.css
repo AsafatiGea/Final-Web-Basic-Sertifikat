@@ -1,0 +1,55 @@
+form {
+  max-width: 500px;
+  margin: 20px auto; /* biar ke tengah */
+  background: #1e1e1e; /* gelap, bukan putih */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ddd; /* biar kelihatan */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #2a2a2a; /* gelap */
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white; /* teks putih */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+.successMessage {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #14532d; /* hijau gelap */
+  border-radius: 5px;
+  color: #bbf7d0;
+}

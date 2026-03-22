@@ -1,0 +1,26 @@
+@media (max-width: 368px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px 5%;
+  }
+}
