@@ -44,10 +44,33 @@ section {
   padding: 10px 10%;
 }
 
-footer {
-  background: #111;
+.footer {
+  background: #0a0a0a;
+  color: #ccc;
+  padding: 40px 10%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer h3,
+.footer h4 {
   color: white;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  font-size: 14px;
 }
