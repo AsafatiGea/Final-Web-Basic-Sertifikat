@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/layout.css" />
     <link rel="stylesheet" href="../styles/components.css" />
     <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="styles/chatbot.css" />
   </head>
 
   <body>
@@ -70,8 +71,18 @@
 
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p>Email: <a href="mailto:redfox.dronesia@gmail.com">redfox.dronesia@gmail.com</a></p>
-          <p>Instagram: <a href="https://instagram.com/explore_pulau_nias" target="_blank">@explore_pulau_nias</a></p>
+          <p>
+            Email:
+            <a href="mailto:redfox.dronesia@gmail.com"
+              >redfox.dronesia@gmail.com</a
+            >
+          </p>
+          <p>
+            Instagram:
+            <a href="https://instagram.com/explore_pulau_nias" target="_blank"
+              >@explore_pulau_nias</a
+            >
+          </p>
         </div>
       </div>
 
@@ -84,5 +95,29 @@
         </p>
       </div>
     </footer>
+    <!-- CHATBOT START -->
+    <div>
+      <input type="checkbox" id="chat-toggle" hidden />
+      <label for="chat-toggle" class="chat-button"> 🗣️ </label>
+      <div class="chat-box">
+        <div class="chat-header">
+          <span>Nias Assistant</span>
+          <label for="chat-toggle" class="close-btn">✖</label>
+        </div>
+
+        <div class="chat-body">
+          <div class="bot-message">
+            Halo 👋 Selamat datang di Website Pulau Nias!
+          </div>
+          <div class="bot-message">
+            Silahkan tanya apa aja tentang pulau nias melalui website ini
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Ketik pesan..." />
+          <button>Kirim</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
