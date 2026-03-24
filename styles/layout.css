@@ -2,13 +2,14 @@ header {
   background: black;
   color: white;
   text-align: center;
-  padding: 10px 0 1px;
+  padding: 20px 0;
+  margin-top: 70px; /* biar tidak ketutup navbar */
 }
 
 header h1 {
   margin-bottom: 10px;
   font-size: 32px;
-  font-style: Georgia;
+  font-family: Georgia, serif;
 }
 
 .navbar {
@@ -18,31 +19,45 @@ header h1 {
   width: 100%;
   background: #111;
   z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li a {
   display: block;
-  padding: 15px 20px;
+  padding: 15px 15px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-  background: blue;
+  background: #1e40af;
+  border-radius: 5px;
 }
 
 section {
-  padding: 10px 10%;
+  padding: 20px 10%;
 }
+
 
 .footer {
   background: #0a0a0a;
