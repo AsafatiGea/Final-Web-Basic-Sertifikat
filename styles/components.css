@@ -44,8 +44,8 @@
 }
 
 .card {
-  background: #1e1e1e;
-  color: white;
+
+  color: black;
 }
 
 .card img {
@@ -55,7 +55,7 @@
 }
 
 .card p {
-  color: #ddd;
+  color: black;
 }
 
 section h2 {
