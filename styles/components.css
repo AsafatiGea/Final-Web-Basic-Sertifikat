@@ -1,7 +1,7 @@
 .logo {
   font-size: 22px;
   font-weight: 700;
-  color: #38bdf8;
+  color: var(--primary);
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
@@ -9,7 +9,7 @@
 }
 
 .logo:hover {
-  color: #0ea5e9;
+  color: var(--secondary);
   transform: scale(1.05);
 }
 

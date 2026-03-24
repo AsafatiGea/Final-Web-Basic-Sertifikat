@@ -11,9 +11,7 @@ html {
 }
 
 body {
-  line-height: 1.7;
-  background: white;
-  color: black;
+   background: var(--light);
 }
 
 
