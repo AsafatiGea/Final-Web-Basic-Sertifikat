@@ -12,12 +12,8 @@ html {
 
 body {
   line-height: 1.7;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
-.p1 {
-  font-size: 18px;
-  color: yellow;
-  font-style: italic;
-}
+

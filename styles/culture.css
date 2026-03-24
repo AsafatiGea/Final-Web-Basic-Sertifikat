@@ -13,13 +13,10 @@
 .budaya-container p {
   font-size: 16px;
 }
+.budaya-container {
+  flex-direction: column;
+}
 
-@media (max-width: 768px) {
-  .budaya-container {
-    flex-direction: column;
-  }
-
-  .budaya-container img {
-    width: 100%;
-  }
+.budaya-container img {
+  width: 100%;
 }
