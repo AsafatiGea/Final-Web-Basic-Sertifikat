@@ -86,3 +86,29 @@ section h2 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.map-pin {
+  width: 18px;
+  height: 18px;
+  background: #e74c3c;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.map-pin span {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.map-pin:hover {
+  transform: rotate(-45deg) scale(1.2);
+  transition: 0.3s;
+}
