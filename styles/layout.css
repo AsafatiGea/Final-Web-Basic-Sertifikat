@@ -3,7 +3,7 @@ header {
   background: white;
   color: black;
   text-align: center;
-  padding: 20px 0;
+  padding: 0 20px;
   margin-top: 70px; /* biar tidak ketutup navbar */
 }
 
@@ -24,6 +24,7 @@ header h1 {
   top: 0;
   width: 100%;
   background: var(--dark);
+  color: gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
