@@ -2,9 +2,17 @@
   .navbar ul {
     flex-wrap: wrap;
   }
-
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu li {
+    width: 100%;
+  }
   .dropdown-content {
     position: static;
     box-shadow: none;
   }
+
+  
 }
