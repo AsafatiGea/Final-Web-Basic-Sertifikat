@@ -23,7 +23,7 @@
   border-radius: 12px;
   display: none;
   flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   z-index: 999;
 }
@@ -48,13 +48,6 @@
   background: white;
 }
 
-.bot-message {
-  background: #;
-  padding: 10px;
-  border-radius: 10px;
-  display: inline-block;
-  max-width: 80%;
-}
 
 .chat-footer {
   display: flex;
@@ -75,7 +68,6 @@
   padding: 10px 15px;
   cursor: pointer;
 }
-
 
 #chat-toggle:checked ~ .chat-box {
   display: flex;

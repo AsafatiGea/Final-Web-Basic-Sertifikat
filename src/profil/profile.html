@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile - Nias Island</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/chatbot.css" />
+    <link rel="stylesheet" href="../styles/profil.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="../index.html" class="logo">Nias Island</a>
+
+        <a
+          href="https://peta-pulau-nias-indonesia-asia.vercel.app"
+          target="_blank"
+          class="map-pin"
+        >
+          <span></span>
+        </a>
+
+        <a href="../src/hub/hub.html">HUB</a>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../src/about.html">About</a></li>
+        <li><a href="../src/destinations.html">Destinations</a></li>
+        <li><a href="../src/culture.html">Culture</a></li>
+        <li><a href="../src/gallery.html">Gallery</a></li>
+        <li><a href="../src/booking.html">Booking</a></li>
+
+        <!-- ACTIVE PROFILE -->
+        <li>
+          <a href="#" style="background: lightgreen; border-radius: 99px">👤</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <h1>Profil Saya</h1>
+      <p>Kelola akun dan aktivitas Anda</p>
+    </header>
+
+    <br /><br /><br />
+
+    <!-- PROFILE SECTION -->
+    <section class="profile-section">
+      <div class="profile-container">
+        
+        <!-- CARD PROFILE -->
+        <div class="profile-card">
+          <div class="avatar">A</div>
+          <h2>Asafati Gea</h2>
+          <p class="email">example@gmail.com</p>
+
+          <div class="profile-actions">
+            <a href="edit-profile.html" class="btn">Edit Profile</a>
+            <a href="settings.html" class="btn secondary">Settings</a>
+          </div>
+        </div>
+
+        <!-- CARD AKTIVITAS -->
+        <div class="activity-card">
+          <h3>Aktivitas</h3>
+          <ul>
+            <li>📌 Belum ada aktivitas</li>
+            <li>📸 Upload konten akan muncul di sini</li>
+            <li>🛒 Transaksi juga akan tampil di sini</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Discover Nias Island</h3>
+          <p>
+            Exploring the beauty, culture, and unique traditions of Nias Island.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            Email:
+            <a href="mailto:redfox.dronesia@gmail.com">
+              redfox.dronesia@gmail.com
+            </a>
+          </p>
+          <p>
+            Instagram:
+            <a href="https://instagram.com/explore_pulau_nias" target="_blank">
+              @explore_pulau_nias
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 Discover Nias Island <br />
+          Designed & Developed by <strong>Asfati Gea</strong>
+        </p>
+      </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div>
+      <input type="checkbox" id="chat-toggle" hidden />
+
+      <label for="chat-toggle" class="chat-button"> 💬 </label>
+
+      <div class="chat-box">
+        <div class="chat-header">
+          <span>Nias Assistant</span>
+          <label for="chat-toggle" class="close-btn">✖</label>
+        </div>
+
+        <div class="chat-body">
+          <div class="bot-message">
+            Halo 👋 Selamat datang di Website Pulau Nias!
+          </div>
+          <div class="bot-message">
+            Silahkan tanya apa aja tentang pulau nias di sini😊
+          </div>
+        </div>
+
+        <div class="chat-footer">
+          <input type="text" placeholder="Ketik pesan..." />
+          <button>Kirim</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
