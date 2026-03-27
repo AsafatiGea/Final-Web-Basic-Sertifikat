@@ -1,44 +1,205 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Nias Hub</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nias Hub - Nias Island</title>
 
-  <style>
-    body { font-family: Arial; background: #f1f5f9; margin: 0; }
-    .container { max-width: 800px; margin: auto; padding: 20px; }
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../styles/layout.css" />
+    <link rel="stylesheet" href="../../styles/responsive.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+    <link rel="stylesheet" href="../../styles/chatbot.css" />
+    <link rel="stylesheet" href="../../styles/hub.css" />
+  </head>
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="../../index.html" class="logo">Nias Island</a>
 
-    .btn {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
-      background: #0f172a;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
-</head>
+        <a
+          href="https://peta-pulau-nias-indonesia-asia.vercel.app"
+          target="_blank"
+          class="map-pin"
+        >
+          <span></span>
+        </a>
 
-<body>
-<div class="container">
+        <a href="../hub/hub.html">HUB</a>
+      </div>
 
-  <h1>🌐 Hub</h1>
+      <ul class="nav-menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="../../src/about.html">About ▾</a>
+          <div class="dropdown-content">
+            <a href="https://bkpsdm.niaskab.go.id/" target="_blank"
+              >Kabupaten Nias</a
+            >
+            <a href="https://portal.niasutarakab.go.id/" target="_blank"
+              >Nias Utara</a
+            >
+            <a href="https://www.niasselatankab.go.id/" target="_blank">
+              Nias Selatan
+            </a>
+            <a href="https://niasbaratkab.go.id/" target="_blank">Nias Barat</a>
+            <a href="https://gunungsitolikota.go.id/" target="_blank"
+              >Kota Gunungsitoli</a
+            >
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../../src/destinations.html">Destinations ▾</a>
+          <div class="dropdown-content">
+            <a
+              href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
+              target="_blank"
+              >Pantai Lagundri</a
+            >
+            <a
+              href="https://medan.kompas.com/read/2023/08/02/204549778/pantai-sorake-di-nias-daya-tarik-keunikan-dan-rute"
+              target="_blank"
+              >Pantai Sorake</a
+            >
+            <a
+              href="https://medan.pikiran-rakyat.com/nasional/pr-3109477562/tersembunyi-di-nias-selatan-keindahan-pantai-moale-bikin-takjub"
+              target="_blank"
+              >Pantai Moale</a
+            >
+            <a
+              href="https://www.detik.com/sumut/wisata/d-7223462/mengenal-pantai-tureloto-di-nias-utara-yang-disebut-laut-matinya-indonesia"
+              target="_blank"
+            >
+              Pantai Tureloto</a
+            >
+            <a
+              href="https://blog.pigijo.com/pantai-asi-walo-di-teluk-bengkuang-surga-tersembunyi-yang-sedap-dipandang/"
+              target="_blank"
+            >
+              Pantai Asi Walo</a
+            >
+            <a
+              href="https://medan.tribunnews.com/2023/12/13/pulau-onolimbu-objek-wisata-di-kabupaten-nias-yang-dikelilingi-laut-biru"
+              target="_blank"
+            >
+              Pantai Onolimbu</a
+            >
+            <a
+              href="https://www.kompasiana.com/iwan02/5aeebaf4bde5755fd72aa702/pantai-laowomaru-pantai-yang-dilupakan-tapi-selalu-dirindukan?utm_source=copilot.com"
+              target="_blank"
+            >
+              Pantai Laowomaru</a
+            >
+            <a
+              href="https://medan.tribunnews.com/2021/09/19/pantai-sirombu-lokasi-wisata-di-nias-barat-yang-merupakan-bekas-kota-yang-tersapu-tsunami"
+              target="_blank"
+            >
+              Pantai Sirombu</a
+            >
+            <a
+              href="https://tempatwisata.net/%E2%88%9A-pantai-hoya-pesona-alam-rekreasi-laut-nias-review-info-lengka/"
+              target="_blank"
+            >
+              Pantai Hoya</a
+            >
+          </div>
+        </li>
+        <li><a href="../../src/culture.html">Culture</a></li>
+        <li class="dropdown">
+          <a href="../../src/gallery.html">Gallery ▾</a>
+          <div class="dropdown-content">
+            <a href="https://museum-nias.org/" target="_blank">Museum Nias</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../../src/booking.html">Booking ▾</a>
+          <div class="dropdown-content">
+            <a
+              href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
+              target="_blank"
+              >Belajar Kosa Kata</a
+            >
+            <a
+              href="https://www.tokopedia.com/queen-pelaminan/baju-adat-nias-pasangan-bahan-bludru-1730575905393116245?extParam=ivf%3Dfalse%26keyword%3Dbaju+adat+nias%26search_id%3D202603251451008D3BBA7425E7C908A0OP%26src%3Dsearch&t_id=1774450270715&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
+              target="_blank"
+              >Beli Baju Adat</a
+            >
+          </div>
+        </li>
+        <li>
+          <a href="../../src/profil/profile.html">👤</a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="card">
-    <a href="upload-konten.html" class="btn">📤 Upload Konten</a>
-    <a href="marketplace.html" class="btn">🛍️ Marketplace</a>
-    <a href="reward.html" class="btn">💰 Reward Saya</a>
-  </div>
+    <!-- HEADER -->
+    <header>
+      <h1>Nias Hub</h1>
+      <p>Pusat aktivitas pengguna & kontribusi untuk Pulau Nias</p>
+    </header>
 
-</div>
-</body>
+    <br /><br /><br />
+
+    <!-- HUB CONTENT -->
+    <section class="hub-section">
+      <div class="hub-container">
+        <div class="hub-card">
+          <h3>📤 Upload Konten</h3>
+          <p>Bagikan foto, cerita, atau video tentang Pulau Nias</p>
+          <a href="upload-konten.html" class="btn">Masuk</a>
+        </div>
+
+        <div class="hub-card">
+          <h3>🛍️ Marketplace</h3>
+          <p>Jual dan beli produk khas Nias</p>
+          <a href="marketplace.html" class="btn">Masuk</a>
+        </div>
+
+        <div class="hub-card">
+          <h3>💰 Reward Saya</h3>
+          <p>Lihat penghasilan dari konten yang kamu upload</p>
+          <a href="reward.html" class="btn">Masuk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h3>Discover Nias Island</h3>
+          <p>Explore budaya & keindahan Nias</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nias Island</p>
+      </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div>
+      <input type="checkbox" id="chat-toggle" hidden />
+
+      <label for="chat-toggle" class="chat-button"> 💬 </label>
+
+      <div class="chat-box">
+        <div class="chat-header">
+          <span>Nias Assistant</span>
+          <label for="chat-toggle" class="close-btn">✖</label>
+        </div>
+
+        <div class="chat-body">
+          <div class="bot-message">Halo 👋</div>
+        </div>
+
+        <div class="chat-footer">
+          <input type="text" placeholder="Ketik pesan..." />
+          <button>Kirim</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,70 @@
+/* SECTION */
+.upload-section {
+  padding: 40px 10%;
+}
+
+/* CONTAINER */
+.upload-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+/* CARD */
+.upload-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.upload-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.upload-card label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* INPUT */
+.upload-card input,
+.upload-card textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* TEXTAREA */
+.upload-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* BUTTON */
+.upload-card button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-card button:hover {
+  background: #1e293b;
+}

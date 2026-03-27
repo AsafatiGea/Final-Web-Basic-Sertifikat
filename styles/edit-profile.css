@@ -1,0 +1,61 @@
+/* WRAPPER */
+.edit-section {
+  padding: 40px 10%;
+}
+
+/* CONTAINER */
+.edit-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CARD */
+.edit-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.edit-card h2 {
+  margin-bottom: 15px;
+}
+
+/* FORM */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e293b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .edit-container {
+    width: 100%;
+  }
+}

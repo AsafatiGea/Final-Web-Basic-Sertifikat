@@ -1,0 +1,47 @@
+/* SECTION */
+.reward-section {
+  padding: 40px 10%;
+}
+
+/* CONTAINER */
+.reward-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+/* CARD */
+.reward-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* AMOUNT */
+.reward-amount {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0f172a;
+  margin: 15px 0;
+}
+
+/* STATUS */
+.reward-status {
+  font-size: 16px;
+  color: gray;
+}
+
+.reward-status span {
+  color: #111;
+  font-weight: 500;
+}

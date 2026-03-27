@@ -1,0 +1,71 @@
+/* WRAPPER */
+.settings-section {
+  padding: 40px 10%;
+}
+
+/* GRID */
+.settings-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.settings-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.settings-card h3 {
+  margin-bottom: 10px;
+}
+
+.settings-card p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0f172a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e293b;
+}
+
+/* LOGOUT */
+.logout {
+  border: 2px solid red;
+}
+
+.btn.danger {
+  background: red;
+}
+
+.btn.danger:hover {
+  background: darkred;
+}
+
+/* SELECT */
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .settings-container {
+    grid-template-columns: 1fr;
+  }
+}
