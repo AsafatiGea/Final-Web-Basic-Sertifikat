@@ -1,47 +1,69 @@
 /* SECTION */
 .reward-section {
-  padding: 40px 10%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* CONTAINER */
 .reward-container {
-  max-width: 600px;
-  margin: auto;
+  width: 100%;
+  max-width: 900px;
 }
 
 /* BACK BUTTON */
 .back-btn {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-decoration: none;
-  color: #0f172a;
-  font-weight: bold;
+  color: #0077ff;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
 }
 
 /* CARD */
 .reward-card {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.reward-card h2 {
+  margin-bottom: 20px;
 }
 
 /* AMOUNT */
 .reward-amount {
   font-size: 40px;
   font-weight: bold;
-  color: #0f172a;
-  margin: 15px 0;
+  color: #00a86b;
+  margin: 20px 0;
 }
 
 /* STATUS */
 .reward-status {
   font-size: 16px;
-  color: gray;
+  color: #555;
 }
 
 .reward-status span {
-  color: #111;
-  font-weight: 500;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .reward-card {
+    padding: 25px;
+  }
+
+  .reward-amount {
+    font-size: 30px;
+  }
 }

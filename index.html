@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/chatbot.css" />
+    <link rel="stylesheet" href="styles/asset/layout.css" />
+    <link rel="stylesheet" href="styles/asset/responsive.css" />
+    <link rel="stylesheet" href="styles/asset/components.css" />
+    <link rel="stylesheet" href="styles/asset/chatbot.css" />
   </head>
 
   <body>
@@ -35,7 +35,6 @@
             <a href="src/hub/reward.html" target="_blank"> Reward </a>
           </div>
         </li>
-
       </div>
       <div class="search-box">
         <span class="search-icon">🔍</span>
@@ -57,7 +56,7 @@
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="src/about.html">About ▾</a>
+          <a href="src/pages/about.html">About ▾</a>
           <div class="dropdown-content">
             <a href="https://bkpsdm.niaskab.go.id/" target="_blank"
               >Kabupaten Nias</a
@@ -75,7 +74,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="src/destinations.html">Destinations ▾</a>
+          <a href="src/pages/destinations.html">Destinations ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -130,15 +129,15 @@
             >
           </div>
         </li>
-        <li><a href="src/culture.html">Culture</a></li>
+        <li><a href="src/pages/culture.html">Culture</a></li>
         <li class="dropdown">
-          <a href="src/gallery.html">Gallery ▾</a>
+          <a href="src/pages/gallery.html">Gallery ▾</a>
           <div class="dropdown-content">
             <a href="https://museum-nias.org/" target="_blank">Museum Nias</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="src/booking.html">Booking ▾</a>
+          <a href="src/pages/booking.html">Booking ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -171,14 +170,13 @@
 
     <section>
       <h2>Selamat Datang di Pulau Nias</h2>
-      <div class="hero">
-        <img src="img/bobby nasution di nias..png" alt="Nias Island" />
-      </div>
+        <img src="img/pantai sorake.jpg" alt="Nias Island" />
       <p>
         Pulau Nias merupakan salah satu destinasi wisata terbaik di Indonesia.
         Pulau ini terkenal dengan ombak kelas dunia, warisan budaya yang unik,
         serta keindahan alam yang masih terjaga dengan baik.
       </p>
+      <a href="src/destinations.html" class="cta-btn">Explore Destinations</a>
     </section>
 
     <section>
@@ -189,6 +187,9 @@
         <div class="card">
           <h3>🌊 Selancar Kelas Dunia</h3>
           <p>Pantai Sorake menawarkan salah satu ombak terbaik di dunia.</p>
+          <a href="src/destinations.html#sorake" class="learn-more"
+            >Learn More →</a
+          >
         </div>
 
         <div class="card">
@@ -207,7 +208,16 @@
         </div>
       </div>
     </section>
-   <!-- FOOTER -->
+
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Festival Lompat Batu – Juni 2026</li>
+        <li>Surfing Competition Sorake – Agustus 2026</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-about">
@@ -258,9 +268,7 @@
         </div>
 
         <div class="chat-body">
-          <div>
-            Ya'ahowu👋
-          </div>
+          <div>Ya'ahowu👋</div>
         </div>
 
         <div class="chat-footer">

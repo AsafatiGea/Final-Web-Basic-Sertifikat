@@ -1,0 +1,81 @@
+.review-section {
+  padding: 50px 20px;
+  background: #0f172a;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.review-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.review-user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.review-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* FORM */
+.review-form-section {
+  padding: 40px 20px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+.review-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.review-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.review-form button {
+  padding: 10px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background: #0ea5e9;
+}

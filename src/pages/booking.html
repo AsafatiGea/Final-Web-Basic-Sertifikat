@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Galeri Foto Nias - Discover Nias Island</title>
+    <title>Daftar Kunjungan - Discover Nias Island</title>
 
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="stylesheet" href="../styles/layout.css" />
-    <link rel="stylesheet" href="../styles/responsive.css" />
-    <link rel="stylesheet" href="../styles/components.css" />
-    <link rel="stylesheet" href="../styles/chatbot.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../styles/pages/booking.css" />
+    <link rel="stylesheet" href="../../styles/asset/layout.css" />
+    <link rel="stylesheet" href="../../styles/asset/components.css" />
+    <link rel="stylesheet" href="../../styles/asset/responsive.css" />
+    <link rel="stylesheet" href="../../styles/asset/chatbot.css" />
   </head>
 
   <body>
@@ -157,21 +157,38 @@
       </ul>
     </nav>
     <header>
-      <h1>Galeri Pulau Nias</h1>
-      <p class="p1">Momen indah dari Pulau Nias</p>
-      <p>Keindahan Alam</p>
+      <h1>Rencanakan Kunjungan Anda</h1>
+      <p class="p1">Isi form untuk informasi lengkap dan penawaran terbaik</p>
     </header>
     <br /><br /><br />
 
     <section>
-      <h2>Keindahan Alam Nias</h2>
-      <div class="gallery">
-        <img src="../img/1.jpg" />
-        <img src="../img/2.jpg" />
-        <img src="../img/3.jpg" />
-        <img src="../img/4.jpg" />
-        <img src="../img/5.jpg" />
-        <img src="../img/6.jpg" />
+      <h2 class="booking">Informasi Kunjungan</h2>
+
+      <form id="visitForm">
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="asal">Negara / Kota Asal</label>
+        <input type="text" id="asal" name="asal" />
+
+        <label for="tanggal">Tanggal Kunjungan</label>
+        <input type="date" id="tanggal" name="tanggal" />
+
+        <label for="jumlah">Jumlah Orang</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" value="1" />
+
+        <label for="pesan">Pesan Khusus</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+        <button type="submit">Kirim Permintaan Informasi</button>
+      </form>
+
+      <div id="successMessage" class="booking-footer">
+        Terima kasih! Informasi kunjungan akan segera dikirim ke email Anda.
       </div>
     </section>
 

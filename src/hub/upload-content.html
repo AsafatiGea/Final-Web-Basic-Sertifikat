@@ -1,23 +1,25 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Konten - Nias Island</title>
 
-    <title>Daftar Kunjungan - Discover Nias Island</title>
-
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../styles/booking.css" />
-    <link rel="stylesheet" href="../styles/layout.css" />
-    <link rel="stylesheet" href="../styles/components.css" />
-    <link rel="stylesheet" href="../styles/responsive.css" />
-    <link rel="stylesheet" href="../styles/chatbot.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../styles/layout.css" />
+    <link rel="stylesheet" href="../../styles/responsive.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+    <link rel="stylesheet" href="../../styles/chatbot.css" />
+    <link rel="stylesheet" href="../../styles/hub/upload-content.css" />
+    
   </head>
 
+
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-left">
-        <a href="../index.html" class="logo">Nias Island</a>
+        <a href="index.html" class="logo">Nias Island </a>
         <!-- ICON PETA -->
         <a
           href="https://peta-pulau-nias-indonesia-asia.vercel.app"
@@ -26,8 +28,9 @@
         >
           <span></span>
         </a>
+
         <li class="dropdown">
-          <a href="../src/hub/hub.html">HUB ▾</a>
+          <a href="src/hub/hub.html">HUB ▾</a>
           <div class="dropdown-content">
             <a href="src/hub/marketplace.html" target="_blank">Marketpla</a>
             <a href="src/hub/upload-konten.html" target="_blank"
@@ -36,6 +39,7 @@
             <a href="src/hub/reward.html" target="_blank"> Reward </a>
           </div>
         </li>
+
       </div>
       <div class="search-box">
         <span class="search-icon">🔍</span>
@@ -53,10 +57,11 @@
           <a>pantai hoya</a>
         </div>
       </div>
+
       <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="../src/about.html">About ▾</a>
+          <a href="src/about.html">About ▾</a>
           <div class="dropdown-content">
             <a href="https://bkpsdm.niaskab.go.id/" target="_blank"
               >Kabupaten Nias</a
@@ -74,7 +79,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="../src/destinations.html">Destinations ▾</a>
+          <a href="src/destinations.html">Destinations ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -129,15 +134,15 @@
             >
           </div>
         </li>
-        <li><a href="../src/culture.html">Culture</a></li>
+        <li><a href="src/culture.html">Culture</a></li>
         <li class="dropdown">
-          <a href="../src/gallery.html">Gallery ▾</a>
+          <a href="src/gallery.html">Gallery ▾</a>
           <div class="dropdown-content">
             <a href="https://museum-nias.org/" target="_blank">Museum Nias</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="../src/booking.html">Booking ▾</a>
+          <a href="src/booking.html">Booking ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -152,46 +157,46 @@
           </div>
         </li>
         <li>
-          <a href="../src/profil/profile.html">👤</a>
+          <a href="src/profil/profile.html">👤</a>
         </li>
       </ul>
     </nav>
+
+    <!-- HEADER -->
     <header>
-      <h1>Rencanakan Kunjungan Anda</h1>
-      <p class="p1">Isi form untuk informasi lengkap dan penawaran terbaik</p>
+      <h1>Upload Konten</h1>
+      <p>Bagikan pengalaman dan keindahan Nias</p>
     </header>
+
     <br /><br /><br />
 
-    <section>
-      <h2 class="booking">Informasi Kunjungan</h2>
+    <!-- CONTENT -->
+    <section class="upload-section">
+      <div class="upload-container">
+        <!-- BACK -->
+        <a href="hub.html" class="back-btn">← Kembali ke Hub</a>
 
-      <form id="visitForm">
-        <label for="nama">Nama Lengkap *</label>
-        <input type="text" id="nama" name="nama" required />
+        <!-- FORM -->
+        <div class="upload-card">
+          <h2>📤 Upload Konten Nias</h2>
 
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required />
+          <form>
+            <label>Judul Konten</label>
+            <input type="text" placeholder="Contoh: Pantai Sorake" />
 
-        <label for="asal">Negara / Kota Asal</label>
-        <input type="text" id="asal" name="asal" />
+            <label>Deskripsi</label>
+            <textarea placeholder="Ceritakan pengalaman Anda..."></textarea>
 
-        <label for="tanggal">Tanggal Kunjungan</label>
-        <input type="date" id="tanggal" name="tanggal" />
+            <label>Upload Gambar</label>
+            <input type="file" />
 
-        <label for="jumlah">Jumlah Orang</label>
-        <input type="number" id="jumlah" name="jumlah" min="1" value="1" />
-
-        <label for="pesan">Pesan Khusus</label>
-        <textarea id="pesan" name="pesan" rows="4"></textarea>
-
-        <button type="submit">Kirim Permintaan Informasi</button>
-      </form>
-
-      <div id="successMessage" class="booking-footer">
-        Terima kasih! Informasi kunjungan akan segera dikirim ke email Anda.
+            <button type="submit">Upload</button>
+          </form>
+        </div>
       </div>
     </section>
 
+   <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-about">
@@ -231,7 +236,10 @@
     <!-- CHATBOT START -->
     <div>
       <input type="checkbox" id="chat-toggle" hidden />
+      <input type="checkbox" id="action-toggle" hidden />
       <label for="chat-toggle" class="chat-button"> 💬 </label>
+
+      <!-- CHAT BOX -->
       <div class="chat-box">
         <div class="chat-header">
           <span>Nias Assistant</span>
@@ -239,10 +247,11 @@
         </div>
 
         <div class="chat-body">
-          <div class="bot-message">
+          <div>
             Ya'ahowu👋
           </div>
         </div>
+
         <div class="chat-footer">
           <div class="left-icons">
             <input type="checkbox" id="menu-toggle" hidden />
