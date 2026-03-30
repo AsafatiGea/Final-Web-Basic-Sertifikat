@@ -1,0 +1,52 @@
+/* SECTION */
+.event-section {
+  padding: 40px 20px;
+}
+
+/* CONTAINER */
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.event-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.event-text {
+  padding: 15px;
+}
+
+.event-text h3 {
+  margin-bottom: 10px;
+}
+
+.event-text p {
+  font-size: 14px;
+  color: #555;
+}
+
+.event-text span {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
+}

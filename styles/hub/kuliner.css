@@ -1,0 +1,49 @@
+.kuliner-section {
+  padding: 50px 20px;
+  background: #0f172a;
+}
+
+.kuliner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.kuliner-card {
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.kuliner-card:hover {
+  transform: translateY(-8px);
+}
+
+.kuliner-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kuliner-text {
+  padding: 15px;
+  color: #fff;
+}
+
+.kuliner-text h3 {
+  margin-bottom: 8px;
+}
+
+.kuliner-text p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.kuliner-text span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #38bdf8;
+}

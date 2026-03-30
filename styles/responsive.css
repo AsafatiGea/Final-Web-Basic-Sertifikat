@@ -13,6 +13,13 @@
     position: static;
     box-shadow: none;
   }
+    .culture-content {
+    flex-direction: column;
+  }
+    .culture-content img {
+    width: 100%;
+  }
+
 
   
 }

@@ -34,7 +34,10 @@
 }
 
 .card {
-  color: black;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -42,20 +45,40 @@
   border-radius: 6px;
   margin-bottom: 10px;
 }
-
-.card p {
-  color: black;
+.card h3 {
+  margin: 8px 0;
+  color: #0f172a;
 }
+
+.card .desc {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+.info-box {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.info-box p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
 
 section h2 {
   color: green;
 }
-/* dropdown container */
+
 .dropdown {
   position: relative;
 }
 
-/* isi dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -70,7 +93,6 @@ section h2 {
   z-index: 1000;
 }
 
-/* link dropdown */
 .dropdown-content a {
   display: block;
   padding: 10px;
@@ -82,7 +104,6 @@ section h2 {
   background: #e8f5e9;
 }
 
-/* muncul saat hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
