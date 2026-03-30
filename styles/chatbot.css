@@ -51,24 +51,74 @@
 
 .chat-footer {
   display: flex;
+  align-items: center;
   border-top: 1px solid #ddd;
+  padding: 5px;
+  gap: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+.menu-popup {
+  position: absolute;
+  bottom: 45px;
+  left: 5px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 8px 0;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  font-size: 14px;
+  z-index: 1000;
+}
+.menu-popup div {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.menu-popup div:hover {
+  background: #f1f1f1;
+}
+
+
+
+.left-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.icon-btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  background: #eee;
 }
 
 .chat-footer input {
   flex: 1;
+  min-width: 0;
   padding: 10px;
   border: none;
   outline: none;
 }
 
-.chat-footer button {
+.send-btn {
+  flex-shrink: 0;
   background: #0f172a;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 8px;
 }
-
 #chat-toggle:checked ~ .chat-box {
+  display: flex;
+}
+#menu-toggle:checked ~ .menu-popup {
   display: flex;
 }

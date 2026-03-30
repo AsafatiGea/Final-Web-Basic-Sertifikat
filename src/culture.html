@@ -26,10 +26,20 @@
         >
           <span></span>
         </a>
+        <li class="dropdown">
+          <a href="../src/hub/hub.html">HUB ▾</a>
+          <div class="dropdown-content">
+            <a href="src/hub/marketplace.html" target="_blank">Marketpla</a>
+            <a href="src/hub/upload-konten.html" target="_blank"
+              >Upload Konten</a
+            >
+            <a href="src/hub/reward.html" target="_blank"> Reward </a>
+          </div>
+        </li>
       </div>
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Cari menu..." />
+        <input type="text" placeholder="Cari" />
 
         <div class="search-dropdown">
           <a>pantai lagundry</a>
@@ -140,6 +150,9 @@
               >Beli Baju Adat</a
             >
           </div>
+        </li>
+        <li>
+          <a href="../src/profil/profile.html">👤</a>
         </li>
       </ul>
     </nav>
@@ -413,15 +426,26 @@
 
         <div class="chat-body">
           <div class="bot-message">
-            Halo 👋 Selamat datang di Website Pulau Nias!
-          </div>
-          <div class="bot-message">
-            Silahkan tanya apa aja tentang pulau nias di sini😊
+            Ya'ahowu👋
           </div>
         </div>
         <div class="chat-footer">
+          <div class="left-icons">
+            <input type="checkbox" id="menu-toggle" hidden />
+
+            <label for="menu-toggle" class="icon-btn">+</label>
+
+            <div class="menu-popup">
+              <div>📎 Add photos & files</div>
+              <div>⋯ More</div>
+            </div>
+            <label class="icon-btn">🎤</label>
+            <label class="icon-btn">🎥</label>
+          </div>
+
           <input type="text" placeholder="Ketik pesan..." />
-          <button>Kirim</button>
+
+          <button class="send-btn">➤</button>
         </div>
       </div>
     </div>
