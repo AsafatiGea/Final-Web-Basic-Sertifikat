@@ -31,7 +31,6 @@ header h1 {
   padding: 0 40px;
 }
 
-
 .navbar ul {
   display: flex;
   gap: 20px;
@@ -57,7 +56,63 @@ header h1 {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 5px; /* ini yang bikin dia DEKET */
+  gap: 15px; /* ini yang bikin dia DEKET */
+}
+
+.search-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.search-section h2 {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-box input {
+  padding: 10px 15px 10px 35px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.search-dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.search-dropdown a:hover {
+  background: #f0f0f0;
+}
+
+.search-box:focus-within .search-dropdown {
+  display: block;
 }
 
 section {
@@ -65,14 +120,13 @@ section {
   background: white;
 }
 
-.booking{
+.booking {
   color: #111;
   text-align: center;
 }
-.booking-footer{
+.booking-footer {
   text-align: center;
 }
-
 
 .footer {
   background: #0f172a;
