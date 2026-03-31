@@ -30,14 +30,15 @@
         <li class="dropdown">
           <a href="../../src/hub/hub.html">HUB ▾</a>
           <div class="dropdown-content">
-            <a href="../../src/hub/marketplace.html" target="_blank">Marketpla</a>
+            <a href="../../src/hub/marketplace.html" target="_blank"
+              >Marketpla</a
+            >
             <a href="../../src/hub/upload-content.html" target="_blank"
               >Upload Konten</a
             >
             <a href="../../src/hub/reward.html" target="_blank"> Reward </a>
           </div>
         </li>
-
       </div>
       <div class="search-box">
         <span class="search-icon">🔍</span>
@@ -162,20 +163,57 @@
         <!-- BACK -->
         <a href="../../src/hub/hub.html" class="back-btn">← Kembali ke Hub</a>
 
-        <!-- CARD -->
-        <div class="reward-card">
-          <h2>💰 Total Reward</h2>
+        <!-- GRID 2 SALDO -->
+        <div class="wallet-grid">
+          <!-- SALDO USER -->
+          <div class="wallet-card user-balance">
+            <h2>💳 Saldo Saya</h2>
+            <div class="balance-amount">Rp 150.000</div>
+            <p class="desc">
+              Saldo yang bisa digunakan untuk booking & layanan
+            </p>
 
-          <div class="reward-amount">Rp 0</div>
+            <div class="action-btns">
+              <a href="#" class="btn topup">Top Up</a>
+              <a href="#" class="btn withdraw">Tarik Dana</a>
+            </div>
+          </div>
 
-          <div class="reward-status">
-            Status: <span>Belum ada konten disetujui</span>
+          <!-- SALDO REWARD -->
+          <div class="wallet-card reward-balance">
+            <h2>🎁 Reward Saya</h2>
+            <div class="balance-amount">Rp 0</div>
+            <p class="desc">Hasil dari kontribusi konten Anda</p>
+
+            <div class="status">
+              Status: <span>Belum ada konten disetujui</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIWAYAT -->
+        <div class="history-card">
+          <h3>📊 Riwayat Transaksi</h3>
+
+          <div class="history-item">
+            <span>Top Up Saldo</span>
+            <span class="plus">+ Rp 150.000</span>
+          </div>
+
+          <div class="history-item">
+            <span>Reward Konten</span>
+            <span class="zero">Rp 0</span>
+          </div>
+
+          <div class="history-item">
+            <span>Booking Hotel</span>
+            <span class="minus">- Rp 0</span>
           </div>
         </div>
       </div>
     </section>
 
-   <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-about">
@@ -226,9 +264,7 @@
         </div>
 
         <div class="chat-body">
-          <div>
-            Ya'ahowu👋
-          </div>
+          <div>Ya'ahowu👋</div>
         </div>
 
         <div class="chat-footer">

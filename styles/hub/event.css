@@ -1,18 +1,45 @@
-/* SECTION */
-.event-section {
-  padding: 40px 20px;
+/* FILTER */
+.event-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-/* CONTAINER */
-.event-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.event-filter span {
+  padding: 8px 15px;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-/* CARD */
+.event-filter .active {
+  background: #0077ff;
+  color: black;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.badge.hot {
+  background: red;
+}
+
+/* CARD FIX */
 .event-card {
-  background: #fff;
+  position: relative;
+  background: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -20,33 +47,30 @@
 }
 
 .event-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.02);
 }
 
-/* IMAGE */
-.event-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-/* TEXT */
-.event-text {
-  padding: 15px;
-}
-
-.event-text h3 {
-  margin-bottom: 10px;
-}
-
-.event-text p {
-  font-size: 14px;
-  color: #555;
-}
-
-.event-text span {
-  display: block;
+/* INFO */
+.event-info {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
   font-size: 13px;
-  color: #888;
+  color: #777;
+}
+
+/* BUTTON */
+.event-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.event-btn:hover {
+  background: #005fcc;
 }

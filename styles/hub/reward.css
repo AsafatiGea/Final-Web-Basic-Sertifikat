@@ -1,69 +1,112 @@
-/* SECTION */
-.reward-section {
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
+/* GRID WALLET */
+.wallet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-/* CONTAINER */
-.reward-container {
-  width: 100%;
-  max-width: 900px;
-}
-
-/* BACK BUTTON */
-.back-btn {
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: #0077ff;
-  font-weight: 600;
-}
-
-.back-btn:hover {
-  text-decoration: underline;
-}
-
-/* CARD */
-.reward-card {
+/* CARD UMUM */
+.wallet-card {
   background: #fff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
-/* TITLE */
-.reward-card h2 {
-  margin-bottom: 20px;
+/* WARNA KHUSUS */
+.user-balance {
+  border-top: 5px solid #0077ff;
+}
+
+.reward-balance {
+  border-top: 5px solid #00a86b;
 }
 
 /* AMOUNT */
-.reward-amount {
-  font-size: 40px;
+.balance-amount {
+  font-size: 35px;
   font-weight: bold;
-  color: #00a86b;
-  margin: 20px 0;
+  margin: 15px 0;
+}
+
+/* DESC */
+.desc {
+  font-size: 14px;
+  color: #666;
+}
+
+/* BUTTON */
+.action-btns {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.topup {
+  background: #0077ff;
+}
+
+.withdraw {
+  background: #e74c3c;
 }
 
 /* STATUS */
-.reward-status {
-  font-size: 16px;
-  color: #555;
+.status {
+  margin-top: 15px;
+  font-size: 14px;
 }
 
-.reward-status span {
-  font-weight: bold;
+.status span {
   color: #e74c3c;
+  font-weight: bold;
+}
+
+/* HISTORY */
+.history-card {
+  margin-top: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.history-card h3 {
+  margin-bottom: 15px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plus {
+  color: #00a86b;
+  font-weight: bold;
+}
+
+.minus {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.zero {
+  color: #999;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .reward-card {
-    padding: 25px;
-  }
-
-  .reward-amount {
-    font-size: 30px;
+  .wallet-grid {
+    grid-template-columns: 1fr;
   }
 }
