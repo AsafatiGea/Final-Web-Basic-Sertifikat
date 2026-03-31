@@ -53,3 +53,10 @@ form button:hover {
   border-radius: 5px;
   color: #bbf7d0;
 }
+.booking {
+  color: #111;
+  text-align: center;
+}
+.booking-footer {
+  text-align: center;
+}

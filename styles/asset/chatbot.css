@@ -109,16 +109,16 @@
 
 .send-btn {
   flex-shrink: 0;
-  background: #0f172a;
+  background: green;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 8px;
 }
-#chat-toggle:checked ~ .chat-box {
+#menu-toggle:checked ~ .menu-popup {
   display: flex;
 }
-#menu-toggle:checked ~ .menu-popup {
+#chat-toggle:checked ~ .chat-box {
   display: flex;
 }
