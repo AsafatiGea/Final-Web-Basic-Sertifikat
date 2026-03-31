@@ -6,19 +6,19 @@
     <title>Edit Profile - Nias Island</title>
 
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../styles/layout.css" />
-    <link rel="stylesheet" href="../../styles/responsive.css" />
-    <link rel="stylesheet" href="../../styles/components.css" />
-    <link rel="stylesheet" href="../../styles/chatbot.css" />
-    <link rel="stylesheet" href="../../styles/edit-profile.css" />
+    <link rel="stylesheet" href="../../styles/asset/layout.css" />
+    <link rel="stylesheet" href="../../styles/asset/responsive.css" />
+    <link rel="stylesheet" href="../../styles/asset/components.css" />
+    <link rel="stylesheet" href="../../styles/asset/chatbot.css" />
+    <link rel="stylesheet" href="../../styles/profil/edit-profile.css" />
   </head>
 
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-left">
-        <a href="../../index.html" class="logo">Nias Island</a>
-
+        <a href="index.html" class="logo">Nias Island </a>
+        <!-- ICON PETA -->
         <a
           href="https://peta-pulau-nias-indonesia-asia.vercel.app"
           target="_blank"
@@ -27,13 +27,38 @@
           <span></span>
         </a>
 
-        <a href="../hub/hub.html">HUB</a>
+        <li class="dropdown">
+          <a href="src/hub/hub.html">HUB ▾</a>
+          <div class="dropdown-content">
+            <a href="src/hub/marketplace.html" target="_blank">Marketpla</a>
+            <a href="src/hub/upload-konten.html" target="_blank"
+              >Upload Konten</a
+            >
+            <a href="src/hub/reward.html" target="_blank"> Reward </a>
+          </div>
+        </li>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Cari" />
+
+        <div class="search-dropdown">
+          <a>pantai lagundry</a>
+          <a>pantai sorake</a>
+          <a>pantai moale</a>
+          <a>pantai tureloto</a>
+          <a>pantai asi walo</a>
+          <a>pantai onolimbu</a>
+          <a>pantai laowomaru</a>
+          <a>pantai sirombu</a>
+          <a>pantai hoya</a>
+        </div>
       </div>
 
       <ul class="nav-menu">
-        <li><a href="../../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="../../src/about.html">About ▾</a>
+          <a href="src/pages/about.html">About ▾</a>
           <div class="dropdown-content">
             <a href="https://bkpsdm.niaskab.go.id/" target="_blank"
               >Kabupaten Nias</a
@@ -51,7 +76,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="../../src/destinations.html">Destinations ▾</a>
+          <a href="src/pages/destinations.html">Destinations ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -106,15 +131,15 @@
             >
           </div>
         </li>
-        <li><a href="../../src/culture.html">Culture</a></li>
+        <li><a href="src/pages/culture.html">Culture</a></li>
         <li class="dropdown">
-          <a href="../../src/gallery.html">Gallery ▾</a>
+          <a href="src/pages/gallery.html">Gallery ▾</a>
           <div class="dropdown-content">
             <a href="https://museum-nias.org/" target="_blank">Museum Nias</a>
           </div>
         </li>
         <li class="dropdown">
-          <a href="../../src/booking.html">Booking ▾</a>
+          <a href="src/pages/booking.html">Booking ▾</a>
           <div class="dropdown-content">
             <a
               href="https://www.tamanbahasa.com/40-daftar-kosa-kata-bahasa-harian-suku-nias-lengkap-692/"
@@ -129,7 +154,7 @@
           </div>
         </li>
         <li>
-          <a href="../../src/profil/profile.html">👤</a>
+          <a href="src/profil/profile.html">👤</a>
         </li>
       </ul>
     </nav>
@@ -163,27 +188,50 @@
         </div>
       </div>
     </section>
-
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
-        <div>
+        <div class="footer-about">
           <h3>Discover Nias Island</h3>
-          <p>Explore budaya & keindahan Nias</p>
+          <p>
+            Exploring the beauty, culture, and unique traditions of Nias Island.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            Email:
+            <a href="mailto:redfox.dronesia@gmail.com"
+              >redfox.dronesia@gmail.com</a
+            >
+          </p>
+          <p>
+            Instagram:
+            <a href="https://instagram.com/explore_pulau_nias" target="_blank"
+              >@explore_pulau_nias</a
+            >
+          </p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Nias Island</p>
+        <p>
+          © 2026 Discover Nias Island
+          <br />
+          Designed & Developed by <strong>Asfati Gea</strong>
+          for UKM IT Verse Competition
+          <br />(Web Basic Class)
+        </p>
       </div>
     </footer>
-
-    <!-- CHATBOT -->
+    <!-- CHATBOT START -->
     <div>
       <input type="checkbox" id="chat-toggle" hidden />
-
+      <input type="checkbox" id="action-toggle" hidden />
       <label for="chat-toggle" class="chat-button"> 💬 </label>
 
+      <!-- CHAT BOX -->
       <div class="chat-box">
         <div class="chat-header">
           <span>Nias Assistant</span>
@@ -191,9 +239,7 @@
         </div>
 
         <div class="chat-body">
-          <div class="bot-message">
-            Ya'ahowu👋
-          </div>
+          <div>Ya'ahowu👋</div>
         </div>
 
         <div class="chat-footer">
